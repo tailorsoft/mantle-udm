@@ -1198,6 +1198,7 @@ along with this software (see the LICENSE.md file). If not, see
         <field name="lastFailedAuthDate" type="date-time"/>
         <field name="consecutiveFailedNsf" type="number-integer"/>
         <field name="lastFailedNsfDate" type="date-time"/>
+	    <field name="maskingFlag" type="text-indicator" default="N"/>
         <relationship type="one" related="mantle.account.method.PaymentMethod"/>
         <relationship type="one" title="CreditCardType" related="moqui.basic.Enumeration" short-alias="type">
             <key-map field-name="creditCardTypeEnumId"/></relationship>
